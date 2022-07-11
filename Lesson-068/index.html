@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	<title>Java Script</title>
+   	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button class="btn">Animation</button>
+    <div class="wrapper">
+        <div class="box"></div>
+    </div>
+  <script>
+    const now = new Date();
+    console.log(now.getFullYear());
+    console.log(now.getMonth());
+    console.log(now.getDate());
+    console.log(now.getHours());
+    console.log(now.getUTCHours());
+
+    let start = new Date();
+    for (let i = 0; i < 100000; i++){
+      let some = i ** 3;
+    }
+    let end = new Date();
+    alert(`Цикл отработал за ${start-end}миллисекунд`);
+  </script>
+  </body>
+</html>
